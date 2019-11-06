@@ -1,0 +1,55 @@
+using System;
+
+namespace _1st_problem
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int Day;
+            int month;
+            int year;
+            //Console.WriteLine("Please enter year : ");
+            year = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Please enter month : ");
+            //month = Console.ReadLine();
+            month = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Please enter day : ");
+            Day = Convert.ToInt32(Console.ReadLine());
+
+            if(( year >1971)|| (year<2019))
+            {
+                Console.WriteLine("Please enter year : "+year);
+                //year = Convert.ToInt32(Console.ReadLine());
+
+            }
+            else
+            {
+                Console.WriteLine("Sorry,you provide an invalid year. Try again!");
+            }
+            if((month>=1)||(month<=12))
+            {
+                Console.WriteLine("Please enter month : "+month);
+
+            }
+            else
+            {
+                Console.WriteLine("Sorry,you provide an invalid month. Try again!");
+            }
+
+            if ((Day >= 1) || (Day <= 31))
+            {
+                Console.WriteLine("Please enter date : "+Day);
+
+            }
+            else
+            {
+                Console.WriteLine("Sorry,you provide an invalid date. Try again!");
+            }
+            Console.WriteLine(Day + "" + month + " " + year);
+
+
+        }
+    }
+}
